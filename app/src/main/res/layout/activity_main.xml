@@ -13,8 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:hint="For EditTexts"
         android:focusableInTouchMode="true"
+        android:hint="For EditTexts"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -30,7 +30,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:placeholderText="@string/app_name"
+        app:hintTextColor="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="@id/editText"
         app:layout_constraintStart_toStartOf="@id/editText"
         app:layout_constraintTop_toBottomOf="@id/editText">
@@ -38,6 +38,7 @@
         <AutoCompleteTextView
             android:id="@+id/tv"
             android:layout_width="match_parent"
+            android:text="@string/app_name"
             android:layout_height="wrap_content"
             android:inputType="none" />
     </com.google.android.material.textfield.TextInputLayout>
